@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Edvanta Assignment for Frontend | Code-Editor </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="left">
+        <label class="lable">
+          <div class="html-lable comman-lable">
+            <div class="name-wrapper">
+              <!-- <i class="fa-brands fa-html5"></i> -->
+              <img class="logo" src="https://cdn.iconscout.com/icon/premium/png-512-thumb/html-five-3020971-2510728.png?f=webp&w=256" alt="">
+              HTML
+            </div>
+            <div class="inside">
+              <div   class="lock" id="html-lock-toggle">Lock</div>
+              <div class="copy" id="copy-html">Copy</div>
+            </div>
+          </div>
+        </label>
+
+        <textarea id="html-code" onkeyup="run()"> </textarea>
+
+        <label>
+          <div class="comman-lable">
+            <div class="name-wrapper">
+                <!-- <i class="fa-brands fa-html5"></i> -->
+                <img class="logo" src="https://cdn.iconscout.com/icon/free/png-256/free-css-logo-3002030-2496146.png?f=webp&w=256" alt="">
+                CSS
+              </div>
+            <div class="inside">
+              <div  class="lock" id="css-lock-toggle">Lock</div>
+              <div class="copy" id="copy-css">Copy</div>
+            </div>
+          </div>
+        </label>
+
+        <textarea id="css-code" onkeyup="run()"> </textarea>
+
+        <label>
+          <div class="comman-lable">
+            <div class="name-wrapper">
+                <!-- <i class="fa-brands fa-html5"></i> -->
+                <img class="logo" src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-2336958-1982839.png?f=webp&w=256" alt="">
+                JAVASCRIPT
+              </div>
+            <div class="inside">
+              <div  class="lock" id="js-lock-toggle">Lock</div>
+              <div  class="copy" id="copy-js">Copy</div>
+            </div>
+          </div>
+        </label>
+
+        <textarea id="js-code" onkeyup="run()"> </textarea>
+      </div>
+      <div class="right">
+        <label> OUTPUT <i class="fa-solid fa-play"></i> </label>
+        <iframe id="output"> </iframe>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
