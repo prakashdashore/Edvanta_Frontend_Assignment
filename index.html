@@ -11,8 +11,13 @@
   </head>
 
   <body>
+
+    <!-- Difining a container for the code editor  -->
     <div class="container">
+      <!-- left part  -->
       <div class="left">
+
+        <!-- header  -->
         <label class="lable">
           <div class="html-lable comman-lable">
             <div class="name-wrapper">
@@ -26,7 +31,7 @@
             </div>
           </div>
         </label>
-
+        <!-- coding area -->
         <textarea id="html-code" onkeyup="run()"> </textarea>
 
         <label>
@@ -48,7 +53,6 @@
         <label>
           <div class="comman-lable">
             <div class="name-wrapper">
-                <!-- <i class="fa-brands fa-html5"></i> -->
                 <img class="logo" src="https://cdn.iconscout.com/icon/free/png-256/free-javascript-2336958-1982839.png?f=webp&w=256" alt="">
                 JAVASCRIPT
               </div>
@@ -61,6 +65,9 @@
 
         <textarea id="js-code" onkeyup="run()"> </textarea>
       </div>
+
+
+      <!-- right part  -->
       <div class="right">
         <label> OUTPUT <i class="fa-solid fa-play"></i> </label>
         <iframe id="output"> </iframe>
